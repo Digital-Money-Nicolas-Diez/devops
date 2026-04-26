@@ -69,6 +69,7 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/app_db?options=-c%20TimeZone=UTC
       SPRING_RABBITMQ_HOST: rabbitmq
       ACCOUNT_SERVICE_URL: http://account-service:8082
+      USER_CLIENT_SECRET_VALUE: ${USER_CLIENT_SECRET_VALUE}
       EUREKA_URI: http://eureka-service:8761/eureka
       SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_KEYCLOAK_TOKEN_URI: http://keycloak:8080/realms/DH_BACKEND/protocol/openid-connect/token
     depends_on:
