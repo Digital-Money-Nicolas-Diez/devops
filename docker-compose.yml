@@ -23,7 +23,7 @@ services:
 
   keycloak:
     restart: unless-stopped
-    image: ghcr.io/digital-money-nicolas-diez/keycloak-docker-image:1.0.1
+    image: ghcr.io/digital-money-nicolas-diez/keycloak-docker-image:v1.0.3
     environment:
       KC_DB: postgres
       KC_DB_URL: jdbc:postgresql://postgres:5432/app_db
@@ -31,7 +31,7 @@ services:
       KC_DB_PASSWORD: app_pass
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
-      KC_HOSTNAME: http://keycloak:8080
+      KC_HOSTNAME: http://localhost:8080
       KC_HOSTNAME_ADMIN: http://localhost:8080
       KC_HOSTNAME_STRICT: "false"
       KC_HTTP_ENABLED: "true"
