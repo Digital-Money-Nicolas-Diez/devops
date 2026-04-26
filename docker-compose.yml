@@ -29,6 +29,7 @@ services:
       KC_DB_URL: jdbc:postgresql://postgres:5432/app_db
       KC_DB_USERNAME: app_user
       KC_DB_PASSWORD: app_pass
+      USER_CLIENT_SECRET_VALUE: ${USER_CLIENT_SECRET_VALUE}
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
       KC_HOSTNAME: http://keycloak:8080
